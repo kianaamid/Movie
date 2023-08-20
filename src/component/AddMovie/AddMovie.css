@@ -1,0 +1,28 @@
+.add-movie-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.form-control {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.form-control input {
+  padding: 0.3rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #e0e0e0;
+  font: inherit;
+  color: #e0e0e0;
+  outline: none;
+}
+.form-btn {
+  margin: 1rem;
+  background: transparent;
+
+  font: inherit;
+  color: #e0e0e0;
+}
