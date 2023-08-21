@@ -1,9 +1,10 @@
 import "./App.css";
+import { useState } from "react";
 import MovieList from "./component/MovieList/MovieList";
 import AddMovie from "./component/AddMovie/AddMovie";
 
 function App() {
-  const MoviesInformation = [
+  const [movie, setMovie] = useState([
     {
       id: 1,
       name: "Barbie",
@@ -19,11 +20,19 @@ function App() {
       name: "Mission Impossible",
       price: 20,
     },
-  ];
+  ]);
+
+  const addMovie = (name, price) => {
+    const id = Math.floor(Math.random() * 10000);
+    const newMovie = { id, ...name, ...price };
+    console.log(newMovie);
+    console.log(...movie);
+    setMovie([...movie, newMovie]);
+  };
   return (
     <div className="App">
-      <AddMovie />
-      <MovieList items={MoviesInformation} />
+      <AddMovie onAdd={addMovie} />
+      <MovieList items={movie} />
     </div>
   );
 }
