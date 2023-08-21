@@ -8,7 +8,9 @@ const Movie = (props) => {
         <div>Movie Price: ${props.price}</div>
       </div>
       <div>
-        <button className="btn">Delete</button>
+        <button className="btn" onClick={() => props.onDelete(props.id)}>
+          Delete
+        </button>
       </div>
     </div>
   );
