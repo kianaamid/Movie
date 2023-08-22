@@ -1,0 +1,19 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "name": "Barbie",
+      "price": 20
+    },
+    {
+      "name": "Titanic",
+      "price": "12",
+      "id": 4
+    },
+    {
+      "name": "Oppenheimer",
+      "price": "20",
+      "id": 5
+    }
+  ]
+}
